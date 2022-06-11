@@ -1,5 +1,6 @@
 #include <iostream>
 #include <assert.h>
+#include"ColorCoder.hpp"
 using namespace TelecommunicationsColorCoder;
 
 ColorPair GetColorFromPairNumber(int pairNumber) {
