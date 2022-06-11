@@ -30,7 +30,7 @@ namespace TelecommunicationsColorCoder
             }
             std::string ToString() {
                 std::string colorPairStr = MajorColorNames[majorColor];
-                colorPairStr += " ";
+                colorPairStr += "              ";
                 colorPairStr += MinorColorNames[minorColor];
                 return colorPairStr;
             }

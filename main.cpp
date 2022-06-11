@@ -39,11 +39,11 @@ int main() {
     testNumberToPair(5, WHITE, SLATE);
     testPairToNumber(BLACK, ORANGE, 12);
     testPairToNumber(VIOLET, SLATE, 25);
-    std::cout << "Pair no. "<<"   "<<"Major color"<<"   "<<"Minor color"<<std::endl;
+    std::cout << "Pair no."<<" "<<"Major color"<<" "<<"Minor color"<<std::endl;
 	for(int i = 1 ;i <=(numberOfMajorColors * numberOfMinorColors);++i)
 	{
 		ColorPair colorPair = GetColorFromPairNumber(i);
-		std::cout <<i<<"   "<<colorPair.ToString()<<std::endl;
+		std::cout <<i<<"        "<<colorPair.ToString()<<std::endl;
 	}
     return 0;
 }
