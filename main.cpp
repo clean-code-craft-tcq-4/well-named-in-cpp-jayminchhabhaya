@@ -20,7 +20,7 @@ void testNumberToPair(int pairNumber,
    TelecommunicationsColorCoder::MajorColor expectedMajor,
    TelecommunicationsColorCoder::MinorColor expectedMinor)
 {
-    TelecommunicationsColorCoder::ColorPair colorPair = TelecommunicationsColorCoder::GetColorFromPairNumber(pairNumber);
+    TelecommunicationsColorCoder::ColorPair colorPair = GetColorFromPairNumber(pairNumber);
     std::cout << "Got pair " << colorPair.ToString() << std::endl;
     assert(colorPair.getMajor() == expectedMajor);
     assert(colorPair.getMinor() == expectedMinor);
@@ -31,7 +31,7 @@ void testPairToNumber(
     TelecommunicationsColorCoder::MinorColor minor,
     int expectedPairNumber)
 {
-    int pairNumber = TelecommunicationsColorCoder::GetPairNumberFromColor(major, minor);
+    int pairNumber = GetPairNumberFromColor(major, minor);
     std::cout << "Got pair number " << pairNumber << std::endl;
     assert(pairNumber == expectedPairNumber);
 }
