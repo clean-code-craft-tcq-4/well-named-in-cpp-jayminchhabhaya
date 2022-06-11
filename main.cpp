@@ -15,7 +15,6 @@ int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
     return major * numberOfMinorColors + minor + 1;
 }
 
-
 void testNumberToPair(int pairNumber,
    MajorColor expectedMajor,
    MinorColor expectedMinor)
@@ -39,10 +38,14 @@ void testPairToNumber(
 int main() {
     testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
-
     testPairToNumber(BLACK, ORANGE, 12);
     testPairToNumber(VIOLET, SLATE, 25);
-
+    std::cout << "Pair no. "<<"   "<<"Major color"<<"   "<<"Minor color"<<std::endl;
+	for(int i = 1 ;i <=(numberOfMajorColors * numberOfMinorColors);++i)
+	{
+		ColorPair colorPair = GetColorFromPairNumber(pairNumber);
+		std::cout <<i<<"   "<<colorPair.getMajor() <<"   "<<colorPair.getMinor()<<std::endl;
+	}
     return 0;
 }
 
