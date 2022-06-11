@@ -34,7 +34,6 @@ void testPairToNumber(
     std::cout << "Got pair number " << pairNumber << std::endl;
     assert(pairNumber == expectedPairNumber);
 }
-
 int main() {
     testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
@@ -43,7 +42,7 @@ int main() {
     std::cout << "Pair no. "<<"   "<<"Major color"<<"   "<<"Minor color"<<std::endl;
 	for(int i = 1 ;i <=(numberOfMajorColors * numberOfMinorColors);++i)
 	{
-		ColorPair colorPair = GetColorFromPairNumber(pairNumber);
+		ColorPair colorPair = GetColorFromPairNumber(i);
 		std::cout <<i<<"   "<<colorPair.getMajor() <<"   "<<colorPair.getMinor()<<std::endl;
 	}
     return 0;
