@@ -4,11 +4,11 @@
 using namespace TelecommunicationsColorCoder;
 
 ColorPair GetColorFromPairNumber(int pairNumber) {
-    int zeroBasedPairNumber = pairNumber - 1;
+    int BasedPairNumber = pairNumber - 1;
     MajorColor majorColor = 
-        (MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
+        (MajorColor)(BasedPairNumber / numberOfMinorColors);
     MinorColor minorColor =
-        (MinorColor)(zeroBasedPairNumber % numberOfMinorColors);
+        (MinorColor)(BasedPairNumber % numberOfMinorColors);
     return ColorPair(majorColor, minorColor);
 }
 int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
