@@ -1,7 +1,7 @@
 #include <iostream>
 #include <assert.h>
-#include"ColorCoder.hpp"
-using namespace TelecommunicationsColorCoder;
+#include"Color.hpp"
+using namespace TelecommunicationsColor;
 
 ColorPair GetColorFromPairNumber(int pairNumber) {
     int BasedPairNumber = pairNumber - 1;
