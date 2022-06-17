@@ -40,7 +40,7 @@ namespace TelecommunicationsColor
 		for(int i = 1 ;i <=(numberOfMajorColors * numberOfMinorColors);++i)
 		{
 			ColorPair colorPair = GetColorFromPairNumber(i);
-			std::cout <<"|   "<<i<<" \t |"<<colorPair.ToString()<<"\t |"<<std::endl;
+			std::cout <<"|   "<<i<<" \t   |  "<<colorPair.ToString()<<"\t |"<<std::endl;
 			if(i%5 == 0)
 			{
 				std::cout << "----------------------------------------" << std::endl;
