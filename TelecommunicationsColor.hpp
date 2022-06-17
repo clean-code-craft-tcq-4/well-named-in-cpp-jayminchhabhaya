@@ -18,11 +18,9 @@ namespace TelecommunicationsColor
             MinorColor getMinor() {
                 return minorColor;
             }
-            std::string ToString() {
-                std::string colorPairStr = MajorColorNames[majorColor];
-                colorPairStr += " \t    ";
-                colorPairStr += MinorColorNames[minorColor];
-                return colorPairStr;
-            }
+			void print_colorpair();
+            std::string ToString();
+			ColorPair GetColorFromPairNumber(int pairNumber);
+            int GetPairNumberFromColor(MajorColor major, MinorColor minor);
     };
 }
