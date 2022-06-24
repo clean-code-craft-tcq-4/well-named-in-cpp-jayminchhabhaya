@@ -32,9 +32,6 @@ namespace TelecommunicationsColor{
 		for(int i = 1 ;i <=(numberOfMajorColors * numberOfMinorColors);++i){
 			ColorPair colorPair = GetColorFromPairNumber(i);
 			prepare_string(i,colorPair.ToString());
-			if(i%5 == 0){
-				std::cout << "----------------------------------------" << std::endl;
-			}
 		}
 	}
 	void ColorPair::Print_header(){
