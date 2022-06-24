@@ -22,7 +22,7 @@ namespace TelecommunicationsColor{
         return colorPairStr;
     }
 	void ColorPair::prepare_string(int PaitNo , std::string str_colorpair){
-		std::string prt_clrpair = "|   "+ std::to_string(PaitNo) +" \t   |  "+ str_colorpair + "\t |"
+		std::string prt_clrpair = "|   "+ std::to_string(PaitNo) +" \t   |  "+ str_colorpair + "\t |";
 		print_colorpair(prt_clrpair);
 		if(PaitNo%5 == 0){
 			print_colorpair("----------------------------------------");
