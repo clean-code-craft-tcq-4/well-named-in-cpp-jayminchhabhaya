@@ -18,9 +18,12 @@ namespace TelecommunicationsColor
             MinorColor getMinor() {
                 return minorColor;
             }
-			void print_colorpair();
+			void print_colorpair(std::string str_colorpair);
             std::string ToString();
 			ColorPair GetColorFromPairNumber(int pairNumber);
             int GetPairNumberFromColor(MajorColor major, MinorColor minor);
+			void prepare_string(std::string str_colorpair);
+			void GetClrPair();
+			void Print_header();
     };
 }
